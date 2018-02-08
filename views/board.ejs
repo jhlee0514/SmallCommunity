@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('./shared/header')  %>
+    </head>
+    <body>
+        <%- include('./shared/navbar') %>
+
+        <!-- Begin page content -->
+        <main role="main" class="container">
+          <h1 class="m-5">Board</h1> 
+          <form action="/board" method="post" class="form-horizontal">
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </form>   
+          <span class="label label-primary"><%= typeof currentDatetime != 'undefined' ? currentDatetime : '' %></span> 
+        </main>
+      
+        <%- include('./shared/footer') %>
+    
+        <%- include('./shared/scripts') %>
+        <script type="text/javascript">
+          
+        </script>
+        
+
+    </body>
+</html>

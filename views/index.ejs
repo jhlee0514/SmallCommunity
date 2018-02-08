@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('./shared/header')  %>
+  </head>
+  <body>
+    <%- include('./shared/navbar') %>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+      <h1 class="mt-5"><%= typeof title != 'undefined' ? title : 'No Title' %></h1>
+      <p>Welcome to <%= typeof title != 'undefined' ? title : 'No Title' %></p>
+      <p>현재 시간은  <%= currentDatetime %></p>      
+    </main>
+  
+    <%- include('./shared/footer') %>
+
+    <%- include('./shared/scripts') %>
+    <script type="text/javascript">
+      
+    </script>
+  </body>
+</html>
